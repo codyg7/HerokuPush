@@ -10,7 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class MainController {
     
     @RequestMapping("/")
-    public String index() {
-        return "/index";
+    public ModelAndView indexMethod() {
+		ModelAndView mv = new ModelAndView("index");
+		return mv;
     }
 }
